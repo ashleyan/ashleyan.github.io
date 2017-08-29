@@ -1,12 +1,21 @@
-h1 {
-	color: blue;
+body {
+	background-color: black;
 }
 
-h2 {
-	color: red;
+h1 {
+	font-size: 80px;
+	font-style: italic;
+	color: white;
 }
 
 p {
-	font-size: 124px;
-	color: pink;
+	color: white;
+}
+
+h2 {
+	color: white;
+}
+
+a {
+	color: white;
 }
