@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 
 <head>
-	
 	<title> Ashley's Website </title>
 	<link rel="stylesheet" href="styles.css">
-	
+	<script src="scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">Home</a>
+	  <a href="about.html">About Me</a>
+	  <a href="2048.html">2048</a>
+	  <a href="photography.html">Photography</a>
+	</div>
 
-	<ul>
-  		<li><a href="index.html">Home</a></li>
-  		<li><a href="links.html">Links</a></li>
-  		<li><a href="about.html">About</a></li>
-  		<li><a href="2048.html">My 2048 Game</a></li>
-	</ul>
-	
-	<center>
+	<div id="main">
+		<ul>
+			<li><a onclick="openNav()">&#9776;</a></li>
+		</ul>
 		
-		<h1> Ashley An </h1>
-		<img src="puppy-coding.jpg" alt="Puppy Coding">
+		<center>
+			
+			<h1> Ashley An </h1>
+			<img src="images/puppy-coding.jpg" alt="Puppy Coding">
 
-	</center>
-
+		</center>
+	</div>
 </body>
