@@ -1,4 +1,4 @@
-html, body {
+body {
   margin: 0;
   padding: 10px;
   background: #faf8ef;
@@ -58,13 +58,13 @@ li a:hover {
 }
 
 .grid-row:last-child {
-	margin-bottom: 0; 
+  margin-bottom: 0; 
 }	
 
 .grid-row:after {
-	content: "";
-display: block;
-clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .grid-cell {
@@ -74,15 +74,20 @@ clear: both;
   float: left;
   border-radius: 3px;
   text-align: center;
+  vertical-align: middle;
+  line-height: 106.25px;
   background: rgba(238, 228, 218, 0.35); 
+  color: black;
+  font-family: georgia;
+  font-size: 40px;
 }
 
 .grid-cell:last-child {
-margin-right: 0; 
+  margin-right: 0; 
 }
 
 .game-container {
-  margin-top: 40px;
+  margin-top: 30px;
   position: relative;
   padding: 15px;
   cursor: default;
@@ -146,10 +151,11 @@ margin-right: 0;
   text-align: center;
   padding: 32px;
 }
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33%;
+  width: 33.33%;
   padding: 10px;
 }
 
@@ -162,4 +168,94 @@ margin-right: 0;
   content: "";
   display: table;
   clear: both;
+}
+
+/************** Styling for images/links on homepage **************/
+.home-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.home-column img {
+  margin-top: 12px;
+}
+
+.home-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-size: 50px;
+  font-style: italic;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/************** Social media icons **************/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
 }
